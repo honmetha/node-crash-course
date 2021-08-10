@@ -1,0 +1,12 @@
+{
+  "name": "node-crash-course",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/honmetha/node-crash-course.git",
+  "author": "Hon <dennis.mejen@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.12"
+  }
+}
