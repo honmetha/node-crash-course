@@ -4,6 +4,10 @@ const morgan = require("morgan");
 // express app
 const app = express();
 
+// connect to mongodb
+const dbURI =
+  ***REMOVED***
+
 // register view engine
 app.set("view engine", "ejs");
 
