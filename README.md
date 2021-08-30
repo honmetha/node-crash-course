@@ -1,5 +1,9 @@
 # Node.js Crash Course
 
+<p float="left">
+  <a href="https://nodejs.org/en/"><img src="./public/nodejs.png" alt="Node.js" width="300"></a>
+</p>
+
 ## 📖 Chapters
 
 1. Introduction & Setup
