@@ -1,17 +1,20 @@
 const express = require("express");
+const dotenv = require("dotenv");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const blogRoutes = require("./routes/blogRoutes");
 
 // express app
+dotenv.config();
 const app = express();
 
 // connect to mongodb
-const dbURI =
-  ***REMOVED***
 mongoose
-  .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then((result) => app.listen(3000))
+  .connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then((result) => app.listen(process.env.PORT))
   .catch((err) => console.log(err));
 
 // register view engine
